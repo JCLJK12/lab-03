@@ -55,8 +55,8 @@
 
             cityList.setOnItemClickListener((parent, view, position, id) -> {
                 City city = dataList.get(position);
-                AddCityFragment editCity = AddCityFragment.newInstance(city, position);
-                editCity.show(getSupportFragmentManager(), "EditCity");
+                AddCityFragment fragment = AddCityFragment.newInstance(city, position);
+                fragment.show(getSupportFragmentManager(), "EditCity");
             });
         }
     }

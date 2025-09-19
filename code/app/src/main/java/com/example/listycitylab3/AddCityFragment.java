@@ -85,12 +85,12 @@ public class AddCityFragment extends DialogFragment {
                 .create();
     }
     public static AddCityFragment newInstance(City city, int position) {
-        AddCityFragment editCity = new AddCityFragment();
+        AddCityFragment fragment = new AddCityFragment();
         Bundle args = new Bundle();
         args.putString("cityName", city.getCity());
         args.putString("provinceName", city.getProvince());
         args.putInt("position", position);
-        editCity.setArguments(args);
-        return editCity;
+        fragment.setArguments(args);
+        return fragment;
     }
 }
